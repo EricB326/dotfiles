@@ -8,10 +8,42 @@ end
 
 set fish_greeting
 
+alias c="clear"
+
+# Maintenance.
+alias update="sudo apt update;sudo apt upgrade -y"
+alias clean="sudo apt auto-remove;sudo apt clean"
+
+# Common file ops.
 alias rlfish="source ~/dotfiles/fish/config.fish; echo Fish config reloaded"
 alias efish="vim ~/dotfiles/fish/config.fish"
+
 alias estar="vim ~/dotfiles/starship.toml"
+
+alias rlvim="source /etc/vim/vimrc"
+alias evim="sudo vim /etc/vim/vimrc"
+
+# General interaction.
 alias c="clear"
+alias sudoe='sudoedit'
+
+# GitHub alias.
+alias gs="git status"
+alias gaa="git add -A"
+alias gap="git add -p"
+alias gcp="git checkout -p"
+alias gf="git fetch"
+alias gfr="git fetch && git rebase"
+alias gl='git log -25 --pretty=format:"%Cred%h%x09%Cgreen%an%x09%Cblue%D %Creset%s"'
+alias gr="git rebase"
+alias grc="git rebase --continue"
+alias gst="git stash save -u"
+alias gstp="git stash pop"
+alias guw="git reset HEAD^"
+alias gw='git add -A && git commit -m "WIP"'
+alias com='git commit -m'
+alias gpom='git push origin main'
+alias gdd='git difftool --dir-diff'
 
 starship init fish | source
 
