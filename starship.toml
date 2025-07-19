@@ -1,5 +1,10 @@
 format = """
-$directory
+$directory\ 
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status
 $character
 """
 
@@ -17,3 +22,12 @@ format = '[$duration](bold yellow)'
 
 [directory]
 read_only = ''
+truncation_length = 0
+truncate_to_repo = false
+
+[git_branch]
+format = '[$branch(:$remote_branch)]($style)'
+style = 'bold black'
+
+[git_metrics]
+disabled = false
