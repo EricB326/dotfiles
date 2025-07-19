@@ -8,9 +8,9 @@ end
 
 set fish_greeting
 
-alias rlfish="source ~/.config/fish/config.fish; echo Fish config reloaded"
-alias efish="vim ~/.config/fish/config.fish"
-alias estar="vim ~/.config/starship.toml"
+alias rlfish="source ~/dotfiles/fish/config.fish; echo Fish config reloaded"
+alias efish="vim ~/dotfiles/fish/config.fish"
+alias estar="vim ~/dotfiles/starship.toml"
 alias c="clear"
 
 starship init fish | source
