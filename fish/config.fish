@@ -20,8 +20,7 @@ alias efish="vim ~/dotfiles/fish/config.fish"
 
 alias estar="vim ~/dotfiles/starship.toml"
 
-alias rlvim="source /etc/vim/vimrc"
-alias evim="sudo vim /etc/vim/vimrc"
+alias evim="vim ~/dotfiles/.vimrc"
 
 # General interaction.
 alias c="clear"
