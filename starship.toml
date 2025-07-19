@@ -1,0 +1,19 @@
+format = """
+$directory
+$character
+"""
+
+right_format = """
+$cmd_duration
+"""
+
+[character]
+success_symbol = '[❯](purple)'
+error_symbol = '[❯](red)'
+
+[cmd_duration]
+min_time = 5000
+format = '[$duration](bold yellow)'
+
+[directory]
+read_only = ''
