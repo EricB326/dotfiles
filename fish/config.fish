@@ -62,4 +62,7 @@ function starship_transient_prompt_func
 end
 
 enable_transience
+
 export PATH="$HOME/.local/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
