@@ -40,6 +40,7 @@ alias gst="git stash save -u"
 alias gstp="git stash pop"
 alias guw="git reset HEAD^"
 alias gw='git add -A && git commit -m "WIP"'
+alias gus='git restore --staged'
 alias com='git commit -m'
 alias gpom='git push origin master'
 alias gdd='git difftool --dir-diff'
