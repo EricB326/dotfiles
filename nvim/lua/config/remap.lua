@@ -1,7 +1,11 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.keymap.set("n", "<leader>re", vim.cmd.Ex, { desc = '[R]eturn to the [E]xplorer.'})
+vim.keymap.set('n', '<leader>w', '<cmd>write<CR>', { desc = '[W]rite file changes.' })
+vim.keymap.set('n', '<leader>q', '<cmd>quit<CR>', { desc = '[Q]uit.' })
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format, { desc = '[L]anguage [F]ormat the file.' })
+
+vim.keymap.set('n', '<leader>re', vim.cmd.Ex, { desc = '[R]eturn to the [E]xplorer.' })
 
 vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
