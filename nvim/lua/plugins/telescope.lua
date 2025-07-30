@@ -9,4 +9,13 @@ return {
 		{ "<leader>fk", "<cmd>Telescope keymaps<cr>",    desc = "[F]ind [K]eymaps" },
 		{ "<C-g>",      "<cmd>Telescope git_files<cr>",  desc = "[Ctrl+g] Find Git files" },
 	},
+	opts = {
+		defaults = {
+			mappings = {
+				i = {
+					["<C-u>"] = false,
+				},
+			},
+		}
+	}
 }
