@@ -66,4 +66,6 @@ enable_transience
 
 export PATH="$HOME/.local/bin:$PATH"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if status is-interactive; and test -d /home/linuxbrew
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+end
