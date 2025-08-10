@@ -15,12 +15,12 @@ alias update="sudo apt update;sudo apt upgrade -y"
 alias clean="sudo apt auto-remove;sudo apt clean"
 
 # Common file ops.
-alias rlfish="source ~/dotfiles/fish/config.fish; echo Fish config reloaded"
-alias efish="vim ~/dotfiles/fish/config.fish"
+alias rlfish="source ~/dotfiles/.config/fish/config.fish; echo Fish config reloaded"
+alias efish="nvim ~/dotfiles/.config/fish/config.fish"
 
-alias estar="vim ~/dotfiles/starship.toml"
+alias estar="nvim ~/dotfiles/.config/starship.toml"
 
-alias evim="vim ~/dotfiles/.vimrc"
+alias evim="nvim ~/dotfiles/.vimrc"
 
 # General interaction.
 alias c="clear"
