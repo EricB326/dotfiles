@@ -25,6 +25,7 @@ alias evim="nvim ~/dotfiles/.vimrc"
 # General interaction.
 alias c="clear"
 alias sudoe='sudoedit'
+alias whatip="curl ifconfig.me"
 
 # GitHub alias.
 alias gs="git status"
