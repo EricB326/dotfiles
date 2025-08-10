@@ -1,5 +1,5 @@
 format = """
-$directory\ 
+$directory$username$hostname\ 
 $git_branch\
 $git_commit\
 $git_state\
@@ -10,6 +10,15 @@ $character
 right_format = """
 $cmd_duration
 """
+
+[username]
+format = "[\\($user@]($style)"
+style_user = 'bold black'
+style_root = 'bold black'
+
+[hostname]
+format = "[$hostname\\)]($style) "
+style = 'bold black'
 
 [character]
 success_symbol = '[❯](purple)'
