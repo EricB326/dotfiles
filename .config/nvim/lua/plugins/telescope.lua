@@ -34,5 +34,5 @@ return {
 			},
 		})
 		return opts
-	end,	
+	end,
 }
