@@ -4,6 +4,7 @@ vim.g.maplocalleader = " "
 vim.keymap.set('n', '<leader>w', '<cmd>write<CR>', { desc = '[W]rite file changes.' })
 vim.keymap.set('n', '<leader>q', '<cmd>quit<CR>', { desc = '[Q]uit.' })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format, { desc = '[L]anguage [F]ormat the file.' })
+vim.keymap.set('n', '<leader>lz', '<cmd>Lazy<CR>', { desc = 'Open [L]a[Z]y dialogue.' })
 
 vim.keymap.set('n', '<leader>re', vim.cmd.Ex, { desc = '[R]eturn to the [E]xplorer.' })
 
