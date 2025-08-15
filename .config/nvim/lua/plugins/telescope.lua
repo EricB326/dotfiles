@@ -9,13 +9,30 @@ return {
 		{ "<leader>fk", "<cmd>Telescope keymaps<cr>",    desc = "[F]ind [K]eymaps" },
 		{ "<C-g>",      "<cmd>Telescope git_files<cr>",  desc = "[Ctrl+g] Find Git files" },
 	},
-	opts = {
-		defaults = {
+	opts = function(_, opts)
+		local tcfg = require("telescope.config")
+
+		local vimgrep_arguments = { unpack(tcfg.values.vimgrep_arguments) }
+		table.insert(vimgrep_arguments, "--hidden")
+		table.insert(vimgrep_arguments, "--glob")
+		table.insert(vimgrep_arguments, "!**/.git/*")
+
+		opts = opts or {}
+
+		opts.defaults = vim.tbl_deep_extend("force", opts.defaults or {}, {
+			vimgrep_arguments = vimgrep_arguments,
 			mappings = {
 				i = {
 					["<C-u>"] = false,
 				},
 			},
-		}
-	}
+		})
+
+		opts.pickers = vim.tbl_deep_extend("force", opts.pickers or {}, {
+			find_files = {
+				find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+			},
+		})
+		return opts
+	end,	
 }
