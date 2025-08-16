@@ -4,6 +4,7 @@
         "custom/media"
     ],
     "modules-center": [
+		"hyprland/workspaces",
     ],
     "modules-right": [
         "pulseaudio",
@@ -13,6 +14,16 @@
         "battery",
         "clock",
     ],
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"persistent": ""
+		},
+	   "persistent-workspaces": {
+			 "*": 3,
+	   }
+	},
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%d-%m-%Y}"
