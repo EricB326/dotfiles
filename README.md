@@ -1,6 +1,10 @@
+# Work In Progress
+
+These dotfiles are currently in a deep w.i.p phase.
+
 # Dotfiles Introduction
 
-This repository contains the dotfiles I use across my systems. The requirements and instructions for these dotfiles are outlined below.
+This repository contains the dotfiles I use across my Linux (and to some extent WSL) systems. I built these dotfiles with development on a laptop in mind. My goal was to maintain a minimal lightweight environment whilst also learning the what things could be done when ricing a system. My environment that I built these dotfiles on is a laptop running Arch utilising Hyprland as a Wayland compositor. The requirements and instructions for these dotfiles are outlined below.
 
 ## Requirements
 
