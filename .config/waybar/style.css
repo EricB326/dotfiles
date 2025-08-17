@@ -83,6 +83,7 @@ button {
 	border-radius: 10px;
 }
 
+#cpu,
 #battery,
 #backlight,
 #power-profiles-daemon {
@@ -94,7 +95,7 @@ button {
 	border-radius: 10px;
 }
 
-#power-profiles-daemon {
+#cpu {
 	background-color: #fb4934;
 	border: 2px solid #cc241d;
 }

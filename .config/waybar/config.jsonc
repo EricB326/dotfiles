@@ -3,8 +3,8 @@
 	"margin-left": 10,
 	"margin-right": 10,
     "modules-left": [
+		"cpu",
         "custom/media",
-        "power-profiles-daemon",
         "battery",
         "backlight",
     ],
@@ -25,6 +25,11 @@
 	   "persistent-workspaces": {
 			 "*": 3,
 	   }
+	},
+	"cpu": {
+		"interval": 10,
+		"format": "{}% ",
+		"max-length": 10
 	},
     "clock": {
 		"format": "{:%I:%M %p}",
