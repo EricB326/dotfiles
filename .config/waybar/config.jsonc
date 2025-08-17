@@ -19,7 +19,7 @@
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
-			"active": "",
+			"active": "",
 			"persistent": ""
 		},
 	   "persistent-workspaces": {
@@ -76,14 +76,9 @@
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pwvucontrol"
     },
     "custom/media": {
         "format": "{icon} {text}",

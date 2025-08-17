@@ -1,5 +1,5 @@
 * {
-    font-family: 'Noto Sans', 'FiraCode Nerd Font Propo';
+    font-family: 'Noto Sans', 'Font Awesome 7 Free';
     font-size: 14px;
 	border-radius: 10px;
 }
@@ -40,7 +40,7 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
-	color: #ffffff;
+	color: #000000;
 }
 
 /* you can set a style on hover for any module like this */
