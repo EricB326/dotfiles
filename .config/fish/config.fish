@@ -11,8 +11,9 @@ set fish_greeting
 alias c="clear"
 
 # Maintenance.
-alias update="sudo apt update;sudo apt upgrade -y"
-alias clean="sudo apt auto-remove;sudo apt clean"
+alias upgrade="sudo pacman -Syu && echo \"Performing system restart in 1 minute.\" && sleep 60 && systemctl reboot"
+alias clean="sudo pacman -Qtd"
+alias remove="sudo pacman -Rns"
 
 # Common file ops.
 alias rlfish="source ~/dotfiles/.config/fish/config.fish; echo Fish config reloaded"
