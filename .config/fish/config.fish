@@ -12,6 +12,7 @@ alias c="clear"
 
 # Maintenance.
 alias upgrade="sudo pacman -Syu && echo \"Performing system restart in 1 minute.\" && sleep 60 && systemctl reboot"
+alias upgradea="sudo pacman -Syu && yay && echo \"Performing system restart in 1 minute.\" && sleep 60 && systemctl reboot"
 alias clean="sudo pacman -Qtd"
 alias remove="sudo pacman -Rns"
 
