@@ -1,6 +1,7 @@
-# Work In Progress
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=VT323&size=28&pause=1000&color=15FF00&center=true&vCenter=true&width=435&lines=eric's+%2Fdotfiles)](https://git.io/typing-svg)
 
-These dotfiles are currently in a deep w.i.p phase.
+> [!WARNING]
+> These dotfiles are currently in a deep w.i.p phase.
 
 # Dotfiles Introduction
 
