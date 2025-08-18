@@ -1,3 +1,5 @@
+@import url("/home/eric/.cache/wal/colors-waybar.css");
+
 * {
     font-family: 'Noto Sans', 'Font Awesome 7 Free';
     font-size: 14px;
@@ -96,8 +98,9 @@ button {
 }
 
 #cpu {
-	background-color: #fb4934;
-	border: 2px solid #cc241d;
+	background-color: @background;
+	color: @color5;
+	border: 2px solid @background;
 }
 
 #battery {
