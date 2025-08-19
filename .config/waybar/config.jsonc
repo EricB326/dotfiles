@@ -1,7 +1,6 @@
 {
-	"margin-top": 10,
-	"margin-left": 10,
-	"margin-right": 10,
+
+
     "modules-left": [
 		"cpu",
         "custom/media",
@@ -16,14 +15,16 @@
         "network",
         "clock",
     ],
+
+
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
-			"active": "",
-			"persistent": ""
+			"active": "",
+			"persistent": "",
 		},
 	   "persistent-workspaces": {
-			 "*": 3,
+			 "*": 5,
 	   }
 	},
 	"cpu": {
