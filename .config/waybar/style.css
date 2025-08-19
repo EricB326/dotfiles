@@ -1,5 +1,22 @@
-@import url("/home/eric/.cache/wal/colors-waybar.css");
+/*     _       __            __                  _____ __        ___            
+ *    | |     / /___ ___  __/ /_  ____ ______   / ___// /___  __/ (_)___  ____ _
+ *    | | /| / / __ `/ / / / __ \/ __ `/ ___/   \__ \/ __/ / / / / / __ \/ __ `/
+ *    | |/ |/ / /_/ / /_/ / /_/ / /_/ / /      ___/ / /_/ /_/ / / / / / / /_/ / 
+ *    |__/|__/\__,_/\__, /_.___/\__,_/_/      /____/\__/\__, /_/_/_/ /_/\__, /  
+ *                 /____/                              /____/          /____/   
+ *
+ * Author: Eric Brkic
+*/
 
+/* --------------------------
+ * Imports
+ * -------------------------- */
+/*@import url("/home/eric/.cache/wal/colors-waybar.css");*/
+@import "colors.css";
+
+/* --------------------------
+ * Global Settings
+ * -------------------------- */
 * {
     font-family: 'Noto Sans', 'Font Awesome 7 Free';
     font-size: 14px;
@@ -52,8 +69,16 @@ button {
     color: #504945;
 }
 
-#workspaces button.active {
-    color: #fb4934;
+/* --------------------------
+ * App Launcher Settings
+ * -------------------------- */
+#custom-applauncher {
+    color: @on_primary;
+	background: @primary;
+	font-size: 16px;
+	margin: 3px;
+	border-radius: 5px;
+	min-width: 35px;
 }
 
 #workspaces button:hover {

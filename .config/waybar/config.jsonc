@@ -2,6 +2,7 @@
 
 
     "modules-left": [
+		"custom/applauncher",
 		"cpu",
         "custom/media",
         "battery",
@@ -27,6 +28,12 @@
 			 "*": 5,
 	   }
 	},
+
+	"custom/applauncher": {
+		"format": "",
+		"on-click": "pkill rofi || rofi -show drun -replace",
+	},
+
 	"cpu": {
 		"interval": 10,
 		"format": "{usage}% ",
