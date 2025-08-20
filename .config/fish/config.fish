@@ -19,9 +19,7 @@ alias remove="sudo pacman -Rns"
 # Common file ops.
 alias rlfish="source ~/dotfiles/.config/fish/config.fish; echo Fish config reloaded"
 alias efish="nvim ~/dotfiles/.config/fish/config.fish"
-
 alias estar="nvim ~/dotfiles/.config/starship.toml"
-
 alias evim="nvim ~/dotfiles/.vimrc"
 
 # General interaction.
