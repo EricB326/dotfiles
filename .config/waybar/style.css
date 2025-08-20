@@ -47,7 +47,7 @@ window#waybar {
 .modules-right {
 	background: @primary_container;
 	font-weight: 600;
-	margin: 5px 0px 0px 5px;
+	margin: 5px 5px 0px 0px;
 	border-radius: 5px;
 	border: 2px solid @on_primary_container;
 }
