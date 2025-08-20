@@ -3,6 +3,11 @@ command = "swww"
 arguments = ["img", "--transition-type", "center"]
 set = true
 
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = '~/dotfiles/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
 [templates.waybar]
 input_path = './templates/colors.css'
 output_path = '~/dotfiles/.config/waybar/colors.css'
