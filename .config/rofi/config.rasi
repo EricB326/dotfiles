@@ -1,3 +1,16 @@
+/*
+       ____        _____    ______            _____      
+      / __ \____  / __(_)  / ____/___  ____  / __(_)___ _
+     / /_/ / __ \/ /_/ /  / /   / __ \/ __ \/ /_/ / __ `/
+    / _, _/ /_/ / __/ /  / /___/ /_/ / / / / __/ / /_/ / 
+   /_/ |_|\____/_/ /_/   \____/\____/_/ /_/_/ /_/\__, /  
+                                                /____/   
+Author: Eric Brkic
+*/
+
+// --------------------------
+// Configuration
+// --------------------------
 configuration {
 	font: "Noto Sans Normal Bold 10";
     show-icons: true;
@@ -6,11 +19,16 @@ configuration {
     display-window: "Windows";
     display-run: "Run";
 	drun-display-format: "{icon} {name}";
-    
 }
 
+// --------------------------
+// Colours
+// --------------------------
 @theme "colors.rasi"
 
+// --------------------------
+// Global Settings
+// --------------------------
 * {
 	transparency: "real";
 	background-color: @primary-container-20;
@@ -19,7 +37,10 @@ configuration {
 	border: 0px;
 	spacing: 0px;
 }
-
+	
+// --------------------------
+// Window Settings
+// --------------------------
 window {
 	width: 40%;
 	border-radius: 5px;
@@ -27,12 +48,18 @@ window {
 	border-color: @primary;
 }
 
+// --------------------------
+// Mode and Input Settings
+// --------------------------
 inputbar {
 	orientation: vertical;
-	children: [ selector-bar, entry ];
+	children: [ mode-selector-bar, entry ];
 }
 
-selector-bar {
+// --------------------------
+// Mode Element Settings
+// --------------------------
+mode-selector-bar {
 	orientation: vertical;
 	children: [ textbox-mode-label, mode-switcher ];
 }
@@ -51,6 +78,7 @@ mode-switcher {
 	border-radius: 5px;
 }
 
+// The 'modes' (application, window, run) use buttons to click between the active option.
 button {
 	color: @on-primary-container;
 	border-radius: 5px;
@@ -61,6 +89,9 @@ button selected {
 	background-color: @secondary;
 }
 
+// --------------------------
+// Text Input/Entry Settings
+// --------------------------
 entry {
 	color: @primary;
 	background-color: @inverse-primary;
@@ -72,6 +103,9 @@ entry {
 	placeholder: "Search";
 }
 
+// --------------------------
+// Result List Settings
+// --------------------------
 listview {
 	columns: 1;
 	fixed-height: true;
@@ -80,6 +114,9 @@ listview {
 	lines: 8;
 }
 
+// --------------------------
+// Per Result Settings
+// --------------------------
 element {
 	margin: 0px 2px 2px 2px;
 	border-radius: 5px;
@@ -97,11 +134,17 @@ element-text {
 	vertical-align: 0.5;
 }
 
+// --------------------------
+// Selected Result Settings
+// --------------------------
 element-text selected {
 	color: @on-primary;
 	background-color: @primary;
 }
 
+// --------------------------
+// Other Result Settings
+// --------------------------
 element-text normal {
 	color: @primary;
 	background-color: @inverse-primary;
