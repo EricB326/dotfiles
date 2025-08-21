@@ -24,21 +24,30 @@ window {
 	width: 40%;
 	border-radius: 5px;
 	border: 2px solid;
-	border-color: @on-primary-container;
-}
-
-mainbox {
+	border-color: @primary;
 }
 
 inputbar {
 	orientation: vertical;
-	children: [ mode-switcher, entry ];
+	children: [ selector-bar, entry ];
+}
+
+selector-bar {
+	orientation: vertical;
+	children: [ textbox-mode-label, mode-switcher ];
+}
+
+textbox-mode-label {
+	color: @on-primary-container;
+	text-color: @on-primary-container;
+	str: "Mode Selection:";
+	margin: 2px 2px 0px 2px;
 }
 
 mode-switcher {
 	color: @on-primary-container;
 	background-color: @primary-container-05;
-	margin: 2px 3px 0px 2px;
+	margin: 0px 0px 0px 2px;
 	border-radius: 5px;
 }
 
@@ -72,7 +81,7 @@ listview {
 }
 
 element {
-	margin: 2px;
+	margin: 0px 2px 2px 2px;
 	border-radius: 5px;
 	spacing: 5px;
 }
