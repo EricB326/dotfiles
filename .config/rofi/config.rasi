@@ -1,3 +1,99 @@
 configuration {
+	font: "Noto Sans Normal Bold 10";
+    show-icons: true;
+    modi: [ drun, window, run ];
+    display-drun: "Applications";
+    display-window: "Windows";
+    display-run: "Run";
+	drun-display-format: "{icon} {name}";
+    
+}
 
+@theme "colors.rasi"
+
+* {
+	transparency: "real";
+	background-color: @primary-container-20;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	spacing: 0px;
+}
+
+window {
+	width: 40%;
+	border-radius: 5px;
+	border: 2px solid;
+	border-color: @on-primary-container;
+}
+
+mainbox {
+}
+
+inputbar {
+	orientation: vertical;
+	children: [ mode-switcher, entry ];
+}
+
+mode-switcher {
+	color: @on-primary-container;
+	background-color: @primary-container-05;
+	margin: 2px 3px 0px 2px;
+	border-radius: 5px;
+}
+
+button {
+	color: @on-primary-container;
+	border-radius: 5px;
+}
+
+button selected {
+	color: @on-secondary;
+	background-color: @secondary;
+}
+
+entry {
+	color: @primary;
+	background-color: @inverse-primary;
+	border: 2px solid;
+	border-color: @primary;
+	margin: 2px 2px 8px 2px;
+	padding: 5px;
+	border-radius: 5px;
+	placeholder: "Search";
+}
+
+listview {
+	columns: 1;
+	fixed-height: true;
+	fixed-columns: true;
+	cycle: false;
+	lines: 8;
+}
+
+element {
+	margin: 2px;
+	border-radius: 5px;
+	spacing: 5px;
+}
+
+element-icon {
+	size: 40px;
+	border-radius: 5px;
+}
+
+element-text {
+	color: @primary;
+	border-radius: 5px;
+	vertical-align: 0.5;
+}
+
+element-text selected {
+	color: @on-primary;
+	background-color: @primary;
+}
+
+element-text normal {
+	color: @primary;
+	background-color: @inverse-primary;
 }
