@@ -1,6 +1,5 @@
+// TODO: Format.
 {
-
-
     "modules-left": [
 		"custom/applauncher",
 		"cpu",
@@ -15,8 +14,8 @@
         "pulseaudio",
         "network",
         "clock",
+		"custom/logout",
     ],
-
 
 	"hyprland/workspaces": {
 		"format": "{icon}",
@@ -32,6 +31,11 @@
 	"custom/applauncher": {
 		"format": "",
 		"on-click": "pkill rofi || rofi -show drun -replace",
+	},
+
+	"custom/logout": {
+		"format": "",
+		"on-click": "wlogout"
 	},
 
 	"cpu": {

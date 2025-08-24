@@ -185,8 +185,8 @@ window#waybar {
  * Clock Settings
  * -------------------------- */
 #clock {
-	color: @on_primary;
-	background: @primary;
+	color: @primary;
+	background: @inverse_primary;
 	margin: 3px;
 	padding: 0px 4px;
 	border-radius: 5px;
@@ -198,6 +198,23 @@ window#waybar {
 	background: @tertiary;
 }
 
+/* --------------------------
+ * Logout Settings
+ * -------------------------- */
+
+#custom-logout {
+	color: @on_primary;
+	background: @primary;
+	margin: 3px;
+	padding: 0px 4px;
+	border-radius: 5px;
+	min-width: 30px;
+}
+
+#custom-logout:hover {
+    color: @on_tertiary;
+	background: @tertiary;
+}
 /* --------------------------
  * BELOW IS ALL TODO!
  * -------------------------- */
