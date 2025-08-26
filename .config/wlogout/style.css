@@ -7,3 +7,83 @@
  *
  * Author: Eric Brkic
 */
+
+/* --------------------------
+ * Imports
+ * -------------------------- */
+@import "colors.css";
+
+/* --------------------------
+ * Global Settings
+ * -------------------------- */
+* {
+    font-family: 'Noto Sans', 'Font Awesome 7 Free';
+	font-size: 16pt;
+}
+
+/* --------------------------
+ * Window Settings
+ * -------------------------- */
+window {
+	background-color: rgba(12, 12, 12, 0.9);
+	background-size: cover;
+}
+
+/* --------------------------
+ * Button Settings
+ * -------------------------- */
+button {
+	color: @on_primary_container;
+	background-color: @primary_container;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	border-radius: 5px;
+	border: 0px;
+}
+
+button:hover {
+    color: @on_tertiary;
+    background-color: @tertiary;
+    background-size: 35%;
+    border-radius: 5px;
+}
+
+/* --------------------------
+ * Layout Settings
+ * -------------------------- */
+#lock {
+	margin: 10px;
+	border-radius: 5px;
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+	margin: 10px;
+	border-radius: 5px;
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+	margin: 10px;
+	border-radius: 5px;
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+	margin: 10px;
+	border-radius: 20px;
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+	margin: 10px;
+	border-radius: 5px;
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+	margin: 10px;
+	border-radius: 5px;
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
