@@ -18,3 +18,7 @@ post_hook = 'pkill -SIGUSR1 kitty'
 [templates.rofi]
 input_path = './templates/rofi-colors.rasi'
 output_path = '~/dotfiles/.config/rofi/colors.rasi'
+
+[templates.wlogout]
+input_path = './templates/colors.css'
+output_path = '~/dotfiles/.config/wlogout/colors.css'
