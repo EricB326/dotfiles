@@ -1,3 +1,12 @@
+#       _______      __       ______            _____      
+#      / ____(_)____/ /_     / ____/___  ____  / __(_)___ _
+#     / /_  / / ___/ __ \   / /   / __ \/ __ \/ /_/ / __ `/
+#    / __/ / (__  ) / / /  / /___/ /_/ / / / / __/ / /_/ / 
+#   /_/   /_/____/_/ /_/   \____/\____/_/ /_/_/ /_/\__, /  
+#                                                 /____/   
+#
+# Author: Eric Brkic
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -8,26 +17,32 @@ end
 
 set fish_greeting
 
+# --------------------------
+# General Aliases
+# --------------------------
 alias c="clear"
+alias sudoe='sudoedit'
+alias whatip="curl ifconfig.me"
 
-# Maintenance.
+# --------------------------
+# Maintenance Aliases
+# --------------------------
 alias upgrade="sudo pacman -Syu && echo \"Performing system restart in 1 minute.\" && sleep 60 && systemctl reboot"
 alias upgradea="sudo pacman -Syu && yay && echo \"Performing system restart in 1 minute.\" && sleep 60 && systemctl reboot"
 alias clean="sudo pacman -Qtd"
 alias remove="sudo pacman -Rns"
 
-# Common file ops.
+# --------------------------
+# Common File Ops Aliases
+# --------------------------
 alias rlfish="source ~/dotfiles/.config/fish/config.fish; echo Fish config reloaded"
 alias efish="nvim ~/dotfiles/.config/fish/config.fish"
 alias estar="nvim ~/dotfiles/.config/starship.toml"
 alias evim="nvim ~/dotfiles/.vimrc"
 
-# General interaction.
-alias c="clear"
-alias sudoe='sudoedit'
-alias whatip="curl ifconfig.me"
-
-# GitHub alias.
+# --------------------------
+# GitHub Aliases
+# --------------------------
 alias gs="git status"
 alias gaa="git add -A"
 alias gap="git add -p"

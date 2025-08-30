@@ -201,7 +201,6 @@ window#waybar {
 /* --------------------------
  * Logout Settings
  * -------------------------- */
-
 #custom-logout {
 	color: @on_primary;
 	background: @primary;
