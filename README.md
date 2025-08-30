@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=VT323&size=40&pause=1000&color=15FF00&width=435&lines=eric's+%2Fdotfiles)](https://git.io/typing-svg)
-![Full desktop screenshot, one.](https://github.com/EricB326/dotfiles/blob/master/images/full_desktop_one.png)
-![Full desktop screenshot, two.](https://github.com/EricB326/dotfiles/blob/master/images/full_desktop_two.png)
+
+<img src="https://github.com/EricB327/dotfiles/blob/master/images/full_desktop_one.png" style="width:50%"><img src="https://github.com/EricB326/dotfiles/blob/master/images/full_desktop_two.png" style="width:50%">
 
 > [!WARNING]
 > These dotfiles are currently in a deep w.i.p phase.
